@@ -29,12 +29,17 @@
     margin: -4px 0 0 0;
     color: #096987;
     font-size: 30px;
+    text-transform: uppercase;
     line-height: 50px;
     font-family: 'Playfair Display';
     font-weight: 500;
     letter-spacing: 1px;
   }
   
+  #copy-right{
+    font-size: 15px;
+    font-weight: 200;
+  }
   
   .top-bar .top-bar-item {
     display: flex;
