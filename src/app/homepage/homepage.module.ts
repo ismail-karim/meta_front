@@ -11,6 +11,8 @@ import { ServiceComponent } from './service/service.component';
 import { ScienceComponent } from './science/science.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ToolsComponent } from './tools/tools.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { RouterModule } from '@angular/router';
     NewsComponent,
     ProductComponent,
     ServiceComponent,
-    ScienceComponent
+    ScienceComponent,
+    ToolsComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
