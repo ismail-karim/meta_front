@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+    public navChange: boolean = false;
+  constructor(
+    private elem: ElementRef
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener("document:scroll")
+  onScroll(){
+    let nav = this.elem.nativeElement.querySelector('.nav-bar');
+    if(document.documentElement.scrollTop > 90)
+    {
+      this.navChange = true;
+    }
+    else{
+      this.navChange = false;
+    }
   }
 
 }
