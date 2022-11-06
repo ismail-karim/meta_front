@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
-
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+    public faEnveloppe = faEnvelope;
     public navChange: boolean = false;
   constructor(
     private elem: ElementRef
