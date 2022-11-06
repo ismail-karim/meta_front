@@ -60,17 +60,17 @@
 }
 
 .carousel .slider .carousel-text h3 {
-    color: #fa0c20;
-    font-size: 30px;
+    color: #fff;
+    font-size: 40px;
     font-weight: 800;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
 
 .carousel .slider .carousel-text h1 {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 60px;
     text-transform: capitalize;
@@ -90,7 +90,7 @@
 }
 
 .carousel .slider .btn.btn-custom:hover {
-    color: #E81C2E;
+    color: #FFF;
 }
 
 .carousel .slider .owl-nav {
@@ -283,7 +283,7 @@ background-color: #0D6BA6;
     margin-bottom: 5px;
 }
 
-.about .about-content ul li i {
+.about .about-content ul li fa-icon {
     margin-right: 8px;
     color: #E81C2E;
 }
@@ -303,7 +303,7 @@ background-color: #0D6BA6;
     margin-bottom: 45px;
 }
 
-.service .service-item i {
+.service .service-item fa-icon {
     text-align: center;
     color: #202C45;
     font-size: 75px;
@@ -314,7 +314,7 @@ background-color: #0D6BA6;
     text-align: center;
 }
 
-.service .service-item [class^="fa"]::before {
+.service .service-item fa-icon [class^="flaticon-"]::before {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
@@ -353,7 +353,7 @@ background-color: #0D6BA6;
     margin: 25px 0;
 }
 
-.facts .facts-item i {
+.facts .facts-item fa-icon {
     margin-top: 15px;
     font-size: 45px;
     color: #E81C2E;

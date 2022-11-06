@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
+import { faCheckCircle, faBookOpen, faIndustry, faHome, faVirus, faChalkboard, faVials, faDatabase, faMicrochip, faUser, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -8,7 +8,18 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 @HostListener("window:scroll", ['$event'])
 export class HomepageComponent implements OnInit {
-    
+    /* ICONS */
+    public iconCheckCircle = faCheckCircle;
+    public iconBookOpen = faBookOpen;
+    public iconIndustry = faIndustry;
+    public iconHome = faHome;
+    public iconChalkboard = faChalkboard;
+    public iconDatabase = faDatabase;
+    public iconMicrochip = faMicrochip;
+    public iconMarketAlt = faMapMarkerAlt;
+    public iconUser = faUser;
+    public iconVials = faVials;
+    public iconVirus = faVirus;
   constructor() { }
 
   customOptions: OwlOptions = {

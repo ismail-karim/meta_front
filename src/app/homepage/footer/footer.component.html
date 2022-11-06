@@ -5,23 +5,24 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
                         <h2>Find us</h2>
-                        <p><i class="fa fa-map-marker"></i>Address, Gant Belgium</p>
-                        <p><i class="fa fa-phone"></i>06 05 04 03 02</p>
-                        <p><i class="fa fa-envelope"></i>info@metaviria.com</p>
+                        <p><fa-icon [icon]="iconMapMarker"></fa-icon>&emsp;Address, Gant Belgium</p>
+                        <p><fa-icon [icon]="iconPhone"></fa-icon>&emsp;06 05 04 03 02</p>
+                        <p><fa-icon [icon]="iconEnvelope"></fa-icon>&emsp;info@metaviria.com</p>
                         <div class="footer-social">
-                            <a class="btn" href=""><i class="fa fa-twitter"></i></a>
-                            <a class="btn" href=""><i class="fa fa-facebook-f"></i></a>
-                            <a class="btn" href=""><i class="fa fa-youtube"></i></a>
-                            <a class="btn" href=""><i class="fa fa-linkedin"></i></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconTwitter"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconFacebook"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconYoutube"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconLinkedin"></fa-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-link">
                         <h2>Menu</h2>
-                        <a [routerLink]="['/a-propos']">About us</a>
-                        <a [routerLink]="['/services']">Services</a>
-                        <a [routerLink]="['/contact']">Contact us</a>
+                        <a [routerLink]="['/home/about']">About us</a>
+                        <a [routerLink]="['/home/services']">Services</a>
+                        <a [routerLink]="['/home/news']">News</a>
+                        <a [routerLink]="['/home/contact']">Contact us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -34,8 +35,8 @@
                     <div class="footer-newsletter">
                         <h2>Newsletter</h2>
                         <form>
-                            <input class="form-control" placeholder="First name">
-                            <input class="form-control" placeholder="Email">
+                            <input class="form-control" name="name" placeholder="First name">
+                            <input class="form-control" name="email" placeholder="Email">
                             <button class="btn btn-custom">Send</button>
                         </form>
                     </div>
@@ -43,7 +44,7 @@
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a href="#">Metaviria</a>, All rights reserved.</p>
+            <p>&copy; <a [routerLink]="['/']">Metaviria</a>, All rights reserved.</p>
         </div>
     </div>
 </footer>

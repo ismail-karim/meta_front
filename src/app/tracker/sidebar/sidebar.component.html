@@ -1,0 +1,45 @@
+<section class="sidemenu">
+    <ul class="menu">
+
+        <li title="home" (click)="showMenuBtn = !showMenuBtn">
+            <a>
+                <fa-icon [icon]="iconBars"></fa-icon>
+            </a>
+        </li>
+        
+        <li title="search">
+            <a > 
+                <fa-icon [icon]="iconSearch"></fa-icon> 
+            </a>
+        </li>
+        <li title="Add virus">
+            <a >
+                <fa-icon [icon]="iconPencil"></fa-icon>
+            </a>
+        </li>
+        <li title="Data">
+            <a >
+                <fa-icon [icon]="iconUser"></fa-icon>
+            </a>
+        </li>
+        <li title="archive">
+            <a >
+                <fa-icon [icon]="iconArchive"></fa-icon>
+            </a>
+        </li>
+        <li title="">
+            <a >
+                <fa-icon [icon]="iconEnvelope"></fa-icon>
+            </a>
+        </li>
+      </ul>
+      
+      <ul class="menu-bar" [class.open]="showMenuBtn">
+          <li><a href="#" class="menu-button">Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Editorial</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+</section>
+

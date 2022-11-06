@@ -13,7 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ToolsComponent } from './tools/tools.component';
 import { AboutComponent } from './about/about.component';
-
+import { DataComponent } from './data/data.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AboutComponent } from './about/about.component';
     ServiceComponent,
     ScienceComponent,
     ToolsComponent,
-    AboutComponent
+    AboutComponent,
+    DataComponent
   ],
   imports: [
     CommonModule,
@@ -33,11 +35,8 @@ import { AboutComponent } from './about/about.component';
     CarouselModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
-  ],
-  entryComponents: [
-    HeaderComponent,
-    FooterComponent
+    RouterModule,
+    FontAwesomeModule
   ],
   exports: [
     HeaderComponent,
