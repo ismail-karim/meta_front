@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScienceComponent implements OnInit {
 
+    public pageTitle:string = "Science";
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
+    public pageTitle: string = "Data";
   constructor() { }
 
   ngOnInit(): void {
