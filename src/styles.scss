@@ -1,6 +1,14 @@
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+    font-family: 'Palatino';
+    src: url('./assets/fonts/Palatino.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('./assets/fonts/AvenirNextLTPro-Regular.otf') format('otf');
+}
 body{
     font-family: 'Playfair Display';
 }
@@ -31,6 +39,7 @@ h4,
 h5, 
 h6 {
     color: #202C45;
+    font-family: 'Palatino';
 }
 .page-header {
     position: relative;
@@ -129,9 +138,10 @@ h6 {
     position: relative;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 9px;
     text-transform: uppercase;
     color: #E81C2E;
+    font-family: 'AvenirNext';
 }
 
 .section-header p::after {

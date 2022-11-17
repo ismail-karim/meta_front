@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+    public iconPhone = faPhone;
+    public iconEnvelope = faEnvelope;
+    public iconLocationDot = faLocationDot;
     public pageTitle: string = "Contact"
   constructor() { }
 

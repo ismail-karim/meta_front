@@ -5,11 +5,11 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
                         <h2>Find us</h2>
-                        <p><fa-icon [icon]="iconMapMarker"></fa-icon>&emsp;Address, Gant Belgium</p>
+                        <p><fa-icon [icon]="iconLocationDot"></fa-icon>&emsp;University of Liège - LIUP - TERRA Gembloux AgroBioTech. Passage des Déportés, 2 - B-5030 Gembloux -  Belgium</p>
                         <p><fa-icon [icon]="iconPhone"></fa-icon>&emsp;06 05 04 03 02</p>
                         <p><fa-icon [icon]="iconEnvelope"></fa-icon>&emsp;info@metaviria.com</p>
                         <div class="footer-social">
-                            <a class="btn" href=""><fa-icon [icon]="iconTwitter"></fa-icon></a>
+                            <a class="btn" href="{{linkTwitter}}" target="_blank"><fa-icon [icon]="iconTwitter"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconFacebook"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconYoutube"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconLinkedin"></fa-icon></a>
@@ -38,13 +38,16 @@
                             <input class="form-control" name="name" placeholder="First name">
                             <input class="form-control" name="email" placeholder="Email">
                             <button class="btn btn-custom">Send</button>
+                            <div class="logo-university">
+                               <a href="{{linkUniversity}}" target="_blank"><img src="../../../assets/img/university-dark-logo.png" alt="logo of university of liege"></a> 
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <a [routerLink]="['/']">Metaviria</a>, All rights reserved.</p>
+            <p>&copy; <a [routerLink]="['/']">Metaviria Inc</a>. All rights reserved - Rachid Tahzima, <br> Evolutionary Proteomics and Structural Virology Group, University of Liège - LIUP - TERRA Gembloux AgroBioTech.</p>
         </div>
     </div>
 </footer>

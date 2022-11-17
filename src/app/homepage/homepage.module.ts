@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { DataComponent } from './data/data.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ToolsComponent,
     AboutComponent,
     DataComponent,
-    TopBarComponent
+    TopBarComponent,
+    TermsComponent
   ],
   imports: [
     CommonModule,

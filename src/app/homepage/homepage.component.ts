@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, EnvironmentInjector } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { faCheckCircle, faBookOpen, faIndustry, faHome, faVirus, faChalkboard, faVials, faDatabase, faMicrochip, faUser, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -23,13 +24,13 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   customOptions: OwlOptions = {
-    autoplay: true,
+    autoplay: false,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    smartSpeed: 300,
+    smartSpeed: 40000,
     items: 1,
     dots: true,
-    loop: true,
+    loop: false,
     nav : false,
     navText : [
         '<i class="fa fa-angle-left" aria-hidden="true"></i>',
@@ -41,17 +42,18 @@ export class HomepageComponent implements OnInit {
     autoplay: true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    smartSpeed: 300,
+    smartSpeed: 40000,
     margin:10,
     items: 4,
     dots: false,
-    loop: true,
+    loop: false,
     nav : false,
     responsive: {
       600: {items:4}
     }
   };
   ngOnInit(): void {
+    console.log(environment.name);
   }
 
 }

@@ -45,6 +45,7 @@
     width: 100%;
     height: 80%;
     object-fit: cover;
+    opacity: 0.2;
 }
 
 .carousel .slider .carousel-text {
@@ -57,30 +58,38 @@
     justify-content: center;
     flex-direction: column;
     z-index: 2;
+    & img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
 }
 
 .carousel .slider .carousel-text h3 {
-    color: #fff;
+    color: #868a8b;
     font-size: 40px;
     font-weight: 800;
     letter-spacing: 8px;
-    text-transform: uppercase;
     margin-bottom: 40px;
+    & .upperTitle{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }
 
 .carousel .slider .carousel-text h1 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 60px;
-    text-transform: capitalize;
+    text-align: center;
 }
 
 .carousel .slider .carousel-text p {
-    max-width: 500px;
+    max-width: 600px;
     color: #ffffff;
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -344,10 +353,27 @@ background-color: #0D6BA6;
     margin: 45px 0;
     display: flex;
     align-items: center;
-    background: #096987;
+    // background: #096987;
+    
+    
+}
+.facts::before{
+    content: "";
+    background: url("../../assets/img/university-picture.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.30;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 .facts .facts-item {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin: 25px 0;
@@ -366,7 +392,7 @@ background-color: #0D6BA6;
 .facts .facts-text h3 {
     position: relative;
     display: inline-block;
-    color: #ffffff;
+    color: #202C45;
     font-size: 60px;
     font-weight: 700;
 }
@@ -376,14 +402,14 @@ background-color: #0D6BA6;
     content: "\f067";
     top: 0px;
     right: -25px;
-    color: #ffffff;
+    color: #202C45;
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
 .facts .facts-text p {
-    color: #ffffff;
+    color: #202C45;
     font-size: 18px;
     font-weight: 500;
     margin: 0;
