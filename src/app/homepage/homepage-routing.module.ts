@@ -8,6 +8,7 @@ import { NewsComponent } from './news/news.component';
 import { ProductComponent } from './product/product.component';
 import { ScienceComponent } from './science/science.component';
 import { ServiceComponent } from './service/service.component';
+import { TermsComponent } from './terms/terms.component';
 import { ToolsComponent } from './tools/tools.component';
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
     {path: 'news', component: NewsComponent},
     {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactUsComponent},
+    {path: 'terms', component: TermsComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

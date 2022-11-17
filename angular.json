@@ -60,6 +60,14 @@
               ],
               "outputHashing": "all"
             },
+            "preprod": {
+                "fileReplacements": [
+                    {
+                        "replace": "src/environments/environment.ts",
+                        "with": "src/environments/environment.preprod.ts"
+                    }
+                ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -76,6 +84,9 @@
           "configurations": {
             "production": {
               "browserTarget": "meta_front:build:production"
+            },
+            "preprod": {
+                "browserTarget": "meta_ftont:build:preprod"
             },
             "development": {
               "browserTarget": "meta_front:build:development"
