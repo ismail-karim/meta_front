@@ -42,7 +42,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ReactiveFormsModule,
     RouterModule,
     FontAwesomeModule,
-    MatSnackBarModule
   ],
   exports: [
     HeaderComponent,
