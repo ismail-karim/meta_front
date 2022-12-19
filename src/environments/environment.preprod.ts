@@ -1,5 +1,7 @@
 export const environment = {
     production: false,
     preprod: true,
-    name: "PREPROD"
+    name: "PREPROD",
+    url: "https://lafabrikduweb.com",
+    urlApi: "https://lafabrikduweb.com/api"
 };

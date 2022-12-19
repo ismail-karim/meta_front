@@ -9,7 +9,7 @@
                         <p><fa-icon [icon]="iconPhone"></fa-icon>&emsp;06 05 04 03 02</p>
                         <p><fa-icon [icon]="iconEnvelope"></fa-icon>&emsp;info@metaviria.com</p>
                         <div class="footer-social">
-                            <a class="btn" href="{{linkTwitter}}" target="_blank"><fa-icon [icon]="iconTwitter"></fa-icon></a>
+                            <a class="btn" [href]="linkTwitter" target="_blank"><fa-icon [icon]="iconTwitter"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconFacebook"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconYoutube"></fa-icon></a>
                             <a class="btn" href=""><fa-icon [icon]="iconLinkedin"></fa-icon></a>
@@ -39,7 +39,7 @@
                             <input class="form-control" name="email" placeholder="Email">
                             <button class="btn btn-custom">Send</button>
                             <div class="logo-university">
-                               <a href="{{linkUniversity}}" target="_blank"><img src="../../../assets/img/university-dark-logo.png" alt="logo of university of liege"></a> 
+                               <a [href]="linkUniversity" target="_blank"><img src="../../../assets/img/university-dark-logo.png" alt="logo of university of liege"></a> 
                             </div>
                         </form>
                     </div>
