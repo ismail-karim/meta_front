@@ -19,7 +19,7 @@ import { AuthPagesModule } from './auth-pages/auth-pages.module';
     HomepageComponent,
     NotfoundComponent,
     TrackerComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +29,8 @@ import { AuthPagesModule } from './auth-pages/auth-pages.module';
     CarouselModule,
     FontAwesomeModule,
     TrackerModule,
-    AuthPagesModule
+    AuthPagesModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
