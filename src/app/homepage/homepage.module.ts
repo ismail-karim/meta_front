@@ -17,6 +17,7 @@ import { DataComponent } from './data/data.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TermsComponent } from './terms/terms.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TermsComponent } from './terms/terms.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatSnackBarModule
   ],
   exports: [
     HeaderComponent,
