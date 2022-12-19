@@ -1,18 +1,20 @@
-import { Inject, Injectable } from '@angular/core';
+import {  Injectable } from '@angular/core';
 import { Article } from '../models/article';
-import { IArticleProvider, IArticleService } from './iarticle-service';
+import { IArticleService } from './iarticle-service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService implements IArticleService {
 
-  constructor(
-    @Inject(IArticleProvider) private srcActicleService: IArticleService,
-  ) { }
+  constructor() { }
+  
 
 
-  getArticles(): Promise<Article> {
+  /**
+   * 
+   */
+  getArticles(): Promise<Array<Article>> {
     try {
       
     } catch (error) {
@@ -20,9 +22,29 @@ export class ArticleService implements IArticleService {
     }
     throw new Error('Method not implemented.');
   }
+
+  /**
+   * 
+   * @param id 
+   */
+  getArticleByID(id: string): Promise<Article> {
+    throw new Error('Method not implemented.');
+  }
+
+
+  /**
+   * 
+   * @param id 
+   */
   updateArtile(id: string): Promise<Article> {
     throw new Error('Method not implemented.');
   }
+
+
+  /**
+   * 
+   * @param id 
+   */
   deleteArticle(id: string): Promise<Article> {
     throw new Error('Method not implemented.');
   }

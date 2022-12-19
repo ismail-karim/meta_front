@@ -13,6 +13,9 @@ import { TrackerComponent } from './tracker/tracker.component';
 import { LoginComponent } from './auth-pages/login/login.component';
 import { TrackerModule } from './tracker/tracker.module';
 import { AuthPagesModule } from './auth-pages/auth-pages.module';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SidebarComponent } from './tracker/sidebar/sidebar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,7 @@ import { AuthPagesModule } from './auth-pages/auth-pages.module';
     NotfoundComponent,
     TrackerComponent,
     LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -30,8 +34,9 @@ import { AuthPagesModule } from './auth-pages/auth-pages.module';
     FontAwesomeModule,
     TrackerModule,
     AuthPagesModule,
-
+    MatSnackBarModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

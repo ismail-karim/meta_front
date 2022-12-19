@@ -86,10 +86,11 @@ export class ContactUsComponent implements OnInit, IContact {
   }
 
   sendDatasForContact() {
-    console.log('Data sended :', {firsname: this.firstname, email: this.email, subject: this.subject, message: this.message});
     this.snackBar.open('Your message has been send', 'OK', {duration: 3000, horizontalPosition: 'end', verticalPosition: 'top'});
 
-    this.documentRef.location.reload();
+    // setTimeout(()=>{
+    //   this.documentRef.location.reload();
+    // }, 4000);
 }
 
 }

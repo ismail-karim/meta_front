@@ -1,6 +1,7 @@
 export const environment = {
   production: false,
-  preprod: true,
+  preprod: false,
+  dev: true,
   name: "DEV",
   url: "localhost:4200",
   urlApi: ""
