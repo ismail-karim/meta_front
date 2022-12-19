@@ -3,7 +3,9 @@ import { Article } from "../models/article";
 
 export interface IArticleService {
 
-    getArticles(): Promise<Article>;
+    getArticles(): Promise<Array<Article>>;
+
+    getArticleByID(id: string): Promise<Article>;
 
     updateArtile(id: string): Promise<Article>;
 

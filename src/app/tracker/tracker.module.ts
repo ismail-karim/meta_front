@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TrackerRoutingModule } from './tracker-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ManageArticlesModule } from './manage-articles/manage-articles.module';
 
 
 @NgModule({
@@ -13,10 +14,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     CommonModule,
     TrackerRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ManageArticlesModule
   ],
-  exports: [
-    SidebarComponent
-  ]
+  exports: [SidebarComponent],
+  providers: [],
+  bootstrap: [SidebarComponent]
+  
 })
 export class TrackerModule { }
