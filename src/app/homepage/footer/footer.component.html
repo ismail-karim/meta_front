@@ -1,0 +1,53 @@
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Find us</h2>
+                        <p><fa-icon [icon]="iconLocationDot"></fa-icon>&emsp;University of Liège - LIUP - TERRA Gembloux AgroBioTech. Passage des Déportés, 2 - B-5030 Gembloux -  Belgium</p>
+                        <p><fa-icon [icon]="iconPhone"></fa-icon>&emsp;06 05 04 03 02</p>
+                        <p><fa-icon [icon]="iconEnvelope"></fa-icon>&emsp;info@metaviria.com</p>
+                        <div class="footer-social">
+                            <a class="btn" [href]="linkTwitter" target="_blank"><fa-icon [icon]="iconTwitter"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconFacebook"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconYoutube"></fa-icon></a>
+                            <a class="btn" href=""><fa-icon [icon]="iconLinkedin"></fa-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Menu</h2>
+                        <a [routerLink]="['/home/about']">About us</a>
+                        <a [routerLink]="['/home/services']">Services</a>
+                        <a [routerLink]="['/home/news']">News</a>
+                        <a [routerLink]="['/home/contact']">Contact us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful links</h2>
+                        <a [routerLink]="['/terms']">Legal notices</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <form>
+                            <input class="form-control" name="name" placeholder="First name">
+                            <input class="form-control" name="email" placeholder="Email">
+                            <button class="btn btn-custom">Send</button>
+                            <div class="logo-university">
+                               <a [href]="linkUniversity" target="_blank"><img src="../../../assets/img/university-dark-logo.png" alt="logo of university of liege"></a> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a [routerLink]="['/']">Metaviria Inc</a>. All rights reserved - Rachid Tahzima, <br> Evolutionary Proteomics and Structural Virology Group, University of Liège - LIUP - TERRA Gembloux AgroBioTech.</p>
+        </div>
+    </div>
+</footer>

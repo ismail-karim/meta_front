@@ -1,0 +1,265 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <owl-carousel-o [options]="customOptions" class="carousel">
+    <ng-template carouselSlide>
+      <div class="slider">
+          <div class="carousel-img">
+            <img src="../../assets/img/caroussel-1.png" alt="img 2">
+          </div>
+          <div class="carousel-text">
+            <h3>Meta<span class="upperTitle">viria</span></h3>
+            <img src="../../assets/img/logo-metaviria-v3.png" alt="">
+            <h1>Predicting Proteomic Features of Viral Diseases to Radically Transform <br>Ai-Driven Forcasting Properties of Emerging Viruses</h1> 
+            <p>
+                Metaviria is at the forefront of the revolution disrupting the status-quo with its AI/ML and Expert Rules Platform to analyze proteomic data from HTS-metagenomic data  assets to help increase characterization of viral key determinants, leading to increased risk factors throughput, robust predictions, and reduced operational costs of viral outbreak mitigation.
+            </p>
+            <a class="btn btn-custom" [routerLink]="['/home/services']">VIRUS TRACKER</a>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slider">
+            <div class="carousel-img">
+              <img src="../../assets/img/caroussel-2.png" alt="img 2">
+            </div>
+            <div class="carousel-text">
+                <h3>Meta<span class="upperTitle">viria</span></h3>
+                <img src="../../assets/img/logo-metaviria-v3.png" alt="">
+              <h1>Predicting Proteomic and Biological  Features of Viral Diseases</h1> 
+              <p>
+                  Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac
+              </p>
+              <a class="btn btn-custom" [routerLink]="['home/services']">Discover our services</a>
+          </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slider">
+            <div class="carousel-img">
+              <img src="../../assets/img/caroussel-3.png" alt="img 2">
+            </div>
+            <div class="carousel-text">
+                <h3>Meta<span class="upperTitle">viria</span></h3>
+                <img src="../../assets/img/logo-metaviria-v3.png" alt="">
+              <h1>
+                Using AI-Driven Modeling to Radically Transform Forcasting operties of Emerging Viruses
+                </h1> 
+              <p>
+                  Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac
+              </p>
+              <a class="btn btn-custom" [routerLink]="['/home/services']">Learn more</a>
+          </div>
+        </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
+
+
+<section >
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="../../assets/img/about.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <p>About us</p>
+                        <h2>Lorem, ipsum.</h2>
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            MetaVIRIA strives to predict the genomic properties of (re)emerging viruses and help prevent, detect, and proactively react to the impact of viral outbreaks and epidemics on plant, animal and human health, and global food security in a One Health approach.
+                        </p>
+                        <!-- <ul>
+                            <li><fa-icon [icon]="iconCheckCircle"></fa-icon> Lorem, ipsum dolor.</li>
+                            <li><fa-icon [icon]="iconCheckCircle"></fa-icon>Lorem, ipsum dolor.</li>
+                            <li><fa-icon [icon]="iconCheckCircle"></fa-icon>Lorem, ipsum dolor.</li>
+                            <li><fa-icon [icon]="iconCheckCircle"></fa-icon>Lorem, ipsum dolor.</li>
+                        </ul> -->
+                        <a class="btn btn-custom" role="button" [routerLink]="['/about']">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="container">
+            <div class="section-header">
+                <p>Lorem, ipsum.</p>
+                <h2>Our services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon id="fa" [icon]="iconBookOpen"></fa-icon>
+                        <h3>Research</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon [icon]="iconIndustry"></fa-icon>
+                        <h3>Industry</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon [icon]="iconHome"></fa-icon>
+                        <h3>Government</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon [icon]="iconChalkboard"></fa-icon>
+                        <h3>Insure tech</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon [icon]="iconDatabase"></fa-icon>
+                        <h3>Gov tech</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <fa-icon [icon]="iconMicrochip"></fa-icon>
+                        <h3>Processed</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <fa-icon [icon]="iconMarketAlt"></fa-icon>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">25</h3>
+                            <p>Contry visited</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <fa-icon [icon]="iconUser"></fa-icon>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">10</h3>
+                            <p>Engineers & Workers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <fa-icon [icon]="iconVials"></fa-icon>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">1500</h3>
+                            <p>Test done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <fa-icon [icon]="iconVirus"></fa-icon>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">5000</h3>
+                            <p>Virus tracked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Our Blog</p>
+                <h2>Latest news & articles</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../assets/img/blog.jpg" alt="Image">
+                            <div class="meta-date">
+                                <span>28</span>
+                                <strong>Oct</strong>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc  augue velit metus congue eget semper
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-folder"></i><a href="">Web Design</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../assets/img/blog.jpg" alt="Image">
+                            <div class="meta-date">
+                                <span>28</span>
+                                <strong>Oct</strong>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc  augue velit metus congue eget semper
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-folder"></i><a href="">Web Design</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="../../assets/img/blog.jpg" alt="Image">
+                            <div class="meta-date">
+                                <span>28</span>
+                                <strong>Oct</strong>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem, quis convall diam eleife. Nam in arcu sit amet massa ferment quis enim. Nunc  augue velit metus congue eget semper
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="">Admin</a></p>
+                            <p><i class="fa fa-folder"></i><a href="">Web Design</a></p>
+                            <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

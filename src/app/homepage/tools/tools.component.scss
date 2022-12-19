@@ -1,0 +1,25 @@
+.viremode {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.viremode .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.viremode .viremode-img img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.viremode .viremode-content {
+    margin-bottom: 30px;
+    & p {
+        font-size: 20px;
+        margin-left: 20px;
+        text-align: justify;
+    }
+}
