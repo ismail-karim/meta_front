@@ -42,25 +42,29 @@
             <div class="col-md-7">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form [formGroup]="contactForm" id="contactForm" novalidate="novalidate" (ngSubmit)="sendDatasForContact()">
                         <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                            <input type="text" class="form-control" id="name" formControlName="firstname" [(ngModel)]="firstname" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div *ngIf="isFirstnameValid()" class="alert alert-danger">Name is required</div>
                         <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                            <input type="email" class="form-control" id="email" formControlName="email" [(ngModel)]="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div *ngIf="isEmailValid()" class="alert alert-danger">Email is required or wrong</div>
                         <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                            <input type="text" class="form-control" id="subject" formControlName="subject" [(ngModel)]="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div *ngIf="isSubjectValid()" class="alert alert-danger">Subject is required</div>
                         <div class="control-group">
-                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <textarea class="form-control" id="message" formControlName="message" [(ngModel)]="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div *ngIf="isMessageValid()" class="alert alert-danger">Message is required or incomplet</div>
                         <div>
-                            <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                            <button class="btn btn-custom" type="submit" [disabled]="isFormValidated()" id="sendMessageButton">Send Message</button>
                         </div>
                     </form>
                 </div>
