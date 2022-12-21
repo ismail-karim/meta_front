@@ -10,19 +10,19 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 
 
 @NgModule({
-  declarations: [
-    ManageArticlesComponent,
-    ArticleViewerComponent,
-  ],
-  imports: [
-    CommonModule,
-    ManageArticlesRoutingModule,
-  ],
-  providers: [
-    { 
-      provide: IArticleProvider,
-      useClass: ArticleService
-    }
-  ]
+    declarations: [
+        ManageArticlesComponent,
+        ArticleViewerComponent
+    ],
+    providers: [
+        {
+            provide: IArticleProvider,
+            useClass: ArticleService
+        }
+    ],
+    imports: [
+        CommonModule,
+        ManageArticlesRoutingModule,
+    ],
 })
 export class ManageArticlesModule { }
