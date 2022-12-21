@@ -1,3 +1,13 @@
+/**
+ * A service calss 
+ * @implement IArticleService
+ * @usage
+ * ```
+ * constructor(
+    @Inject(IArticleProvider) private articleService: ArticleService,
+  ) { }
+ * ```
+ */
 import {  Injectable } from '@angular/core';
 import { Article } from '../models/article';
 import { IArticleService } from './iarticle-service';
@@ -5,6 +15,8 @@ import { IArticleService } from './iarticle-service';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ArticleService implements IArticleService {
 
   constructor() { }
@@ -14,7 +26,7 @@ export class ArticleService implements IArticleService {
   /**
    * 
    */
-  getArticles(): Promise<Array<Article>> {
+  public getArticles(): Promise<Array<Article>> {
     try {
       
     } catch (error) {
@@ -27,7 +39,7 @@ export class ArticleService implements IArticleService {
    * 
    * @param id 
    */
-  getArticleByID(id: string): Promise<Article> {
+  public getArticleByID(id: string): Promise<Article> {
     throw new Error('Method not implemented.');
   }
 
@@ -36,7 +48,7 @@ export class ArticleService implements IArticleService {
    * 
    * @param id 
    */
-  updateArtile(id: string): Promise<Article> {
+  public updateArtile(id: string): Promise<Article> {
     throw new Error('Method not implemented.');
   }
 
@@ -45,7 +57,7 @@ export class ArticleService implements IArticleService {
    * 
    * @param id 
    */
-  deleteArticle(id: string): Promise<Article> {
+  public deleteArticle(id: string): Promise<Article> {
     throw new Error('Method not implemented.');
   }
 
