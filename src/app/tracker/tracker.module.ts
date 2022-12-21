@@ -5,6 +5,7 @@ import { TrackerRoutingModule } from './tracker-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ManageArticlesModule } from './manage-articles/manage-articles.module';
+import { TrackerComponent } from './tracker.component';
 
 
 @NgModule({
@@ -19,7 +20,10 @@ import { ManageArticlesModule } from './manage-articles/manage-articles.module';
   ],
   exports: [SidebarComponent],
   providers: [],
-  bootstrap: [SidebarComponent]
+  bootstrap: [
+    TrackerComponent,
+    SidebarComponent
+  ]
   
 })
 export class TrackerModule { }

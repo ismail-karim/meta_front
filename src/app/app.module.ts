@@ -23,7 +23,6 @@ import { SidebarComponent } from './tracker/sidebar/sidebar.component';
     NotfoundComponent,
     TrackerComponent,
     LoginComponent,
-    
   ],
   imports: [
     BrowserModule,
